@@ -25,5 +25,8 @@ public class Task {
 
     @Column(name = "complete", nullable = false)
     Boolean completed;
+
+    @Column(name = "task_number", nullable = false)
+    String taskNumber;
 }
 
