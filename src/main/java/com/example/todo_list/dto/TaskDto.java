@@ -1,6 +1,5 @@
-package com.example.todo_list.dto.form;
+package com.example.todo_list.dto;
 
-import jakarta.validation.constraints.NotNull;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,16 +10,13 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class TaskForm {
-    @NotNull
+public class TaskDto {
+
+    Long id;
+
     String name;
 
-    @NotNull
     String description;
 
-    @NotNull
     Boolean completed;
-
-    @NotNull
-    String taskNumber;
 }
